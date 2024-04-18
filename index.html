@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Drive Embed Generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Google Drive Embed Generator</h1>
+  <p class="instructions">Follow these steps:</p>
+  <ol class="instructions">
+    <li>Download the video and upload it to Google Drive.</li>
+    <li>Make the video publicly viewable.</li>
+    <li>Open the link (e.g., https://drive.google.com/file/d/YourIdHere/view).</li>
+    <li>Paste the link into the box below and click "Generate Embed Code".</li>
+  </ol>
+  <input type="text" id="driveLink" placeholder="Enter Google Drive Preview Link">
+  <button onclick="generateEmbed()">Generate Embed Code</button>
+  <div class="result">
+    <div class="code" id="embedCode"></div>
+    <button onclick="copyEmbedCode()">Copy Code</button>
+    <div class="preview" id="preview"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
